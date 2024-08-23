@@ -1,23 +1,16 @@
-import SignIn from "./__auth/SignIn";
-import Home from "./home/Home";
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import LevelTest from "./tests/LevelTest";
+import { Outlet } from "react-router-dom";
+import Bar from "./header/Bar";
 
 function App() {
-
   return (
-
-    <Router>
-    <Routes>
-      <Route path='/'  element={<Home />}/>
-      <Route path='/sign-in'  element={<SignIn/>}/>
-
-      {/* tests */}
-      <Route path='/level-test'  element={<LevelTest/>}/>
-    </Routes>
-  </Router>
-
-  )
+    <div>
+      {" "}
+      <Bar />
+      <div>
+        <Outlet />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;

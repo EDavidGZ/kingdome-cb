@@ -6,7 +6,6 @@ import Modal from "@mui/joy/Modal";
 import Button from "@mui/joy/Button";
 import Swal from "sweetalert2";
 import { Link, useNavigate } from "react-router-dom";
-import Bar from "../bar-menu/Bar";
 
 const LevelTest = () => {
   const navigate = useNavigate();
@@ -270,7 +269,7 @@ const LevelTest = () => {
 
   return (
     <div className="test-body">
-      <Bar />
+
       <br />
       <h1 className="text-xl font-semibold">Ubication test</h1>
       <form action="" className="test-answer">
